@@ -1,2 +1,34 @@
-<app-progresso></app-progresso>
-<app-tentativas></app-tentativas>
+<div class="container jumbotron">
+    <div class="row">
+        <div class="col-md-6">
+            <app-progresso  [progress]="progresso" ></app-progresso>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+            <app-tentativas [tentativas]="tentativas" ></app-tentativas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <h3>{{ titulo }}</h3>
+                <p>{{ RodadaFrase.fraseEng }}</p>
+                <textarea 
+                
+                class="form-control" 
+
+                rows="3"
+                
+                (input)="getResposta($event)"
+
+                [value]="resposta"
+                ></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-end">
+            <button class="btn btn-primary" (click)="verificarResposta()" >Veirificar</button>
+        </div>
+    </div>
+</div>
+

@@ -8,11 +8,11 @@ import { Component, OnInit  } from '@angular/core';
 
 export class TopoComponent implements OnInit{
 
+    public titulo:string = "Projeto Casulo"
+
     constructor(){
 
     }
-
-
     ngOnInit(){
         
     }
