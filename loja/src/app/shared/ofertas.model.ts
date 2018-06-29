@@ -1,4 +1,4 @@
-export class oferta{
+export class Oferta{
     
     public id: number
     public categoria: string

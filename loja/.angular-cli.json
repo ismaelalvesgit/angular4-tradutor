@@ -8,7 +8,8 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets"
+        "assets",
+        "favicon.ico"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -59,8 +60,6 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {
-      "spec": false
-    }
+    "component": {}
   }
 }
